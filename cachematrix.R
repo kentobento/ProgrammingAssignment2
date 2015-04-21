@@ -42,7 +42,7 @@ cacheSolve <- function(x, ...) {
     return(inv)
   }
 
-  # the cache does not contain the inverse - compute and return it
+  # the cache does not contain the inverse - compute, cache, and return it
   matrix <- x$get()
   inv <- solve(matrix)
   x$setinverse(inv)
